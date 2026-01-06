@@ -1,0 +1,23 @@
+{
+  "resourceType": "Immunization",
+  "id": "vacina-gripe-2024",
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "J07BB02",
+        "display": "Vacina influenza inativada"
+      }
+    ]
+  },
+  "patient": { "reference": "Patient/exemplo-maria" },
+  "occurrenceDateTime": "2024-04-20",
+  "lotNumber": "LOTE-XYZ-123",
+  "site": {
+    "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v3-ActSite", "code": "LA", "display": "Braço Esquerdo" } ]
+  },
+  "route": {
+    "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration", "code": "IM", "display": "Intramuscular" } ]
+  }
+}

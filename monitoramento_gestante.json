@@ -1,0 +1,31 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "gravidez-ativa",
+        "code": {
+          "coding": [
+            { "system": "http://snomed.info/sct", "code": "77386006", "display": "Gestante" }
+          ]
+        },
+        "subject": { "reference": "Patient/exemplo-maria" }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "data-ultima-menstruacao",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8665-2", "display": "Data da última menstruação" }
+          ]
+        },
+        "valueDateTime": "2024-01-15",
+        "subject": { "reference": "Patient/exemplo-maria" }
+      }
+    }
+  ]
+}
